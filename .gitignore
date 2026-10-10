@@ -1,0 +1,8 @@
+cmake-build-*/
+build/
+.idea/
+
+# Generated data
+data/
+known_faces/
+unknown_faces/
