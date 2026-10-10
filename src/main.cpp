@@ -22,10 +22,6 @@
 
 namespace {
 
-    // Quit request set either by the GUI (waitKey) or by a key typed in the
-    // terminal. On macOS the imshow window often never receives focus when the
-    // app is launched from a shell, so waitKey() never sees q/ESC; reading the
-    // terminal directly guarantees the quit keys always work.
     std::atomic<bool> g_quitRequested{false};
     termios g_origTermios{};
     bool g_termiosSaved = false;
